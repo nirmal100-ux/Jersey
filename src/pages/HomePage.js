@@ -20,13 +20,13 @@ const HomePage = () => {
         <div className='  px-20'>
           <h1 className='font-bold text-4xl'>WELCOME TO THE JERSEY SHOP</h1>
           <p className='text-red-800'>The Club Jersey is KTM Biggest Football Jersey Supplier. We are selling Football Jersey Master and Player Quality with lowest Price in Nepal.</p>
-          <p className='text-red-800'> We also offer a Discount jersery for anyone wanting to buy it, with additional features and high quality.</p>
+          <p className='text-red-800 py-1'> We also offer a Discount jersery for anyone wanting to buy it, with additional features and high quality.</p>
         </div>
 
 
 
       </div>
-      <div className='p-5 grid grid-cols-3 gap-2 items-start bg-blue-gray-400'>
+      <div className='p-6 grid grid-cols-3 gap-2 items-start bg-blue-gray-400'>
         {data && data.map((product) => {
           return <ProductCard key={product._id} product={product} />
         })}
